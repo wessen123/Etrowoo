@@ -152,7 +152,7 @@ if (!empty($config) && is_array($config)) {
               if ($common_value) {
                   echo "Arrays have at least one common value.";
                   $task->do_task($order);   
-                  die("orders elese");
+                  die($task."orders trueeeeeeeeeee");
               } else {
                   echo "Arrays do not have any common value.";
                   die("orders elese");
