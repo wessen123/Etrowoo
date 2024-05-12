@@ -52,7 +52,7 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
 
         $task_factory = AOTFW_Order_Task_Factory::get_instance();
 
-        $settings_api = AOTFW_Settings_Api::get_instance();
+    
 
         $order = wc_get_order($order_id);
         $items = $order->get_items();
@@ -99,20 +99,20 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
     }
      var_dump(  $new_array );
      echo 'wesssen '.'</br>';
-   $this->check_the_order($task_factory,$settings_api, $order,$new_status, $order_id ,$new_array);
+   $this->check_the_order($task_factory, $order,$new_status, $order_id ,$new_array);
     //die("orders test");    
       }
     }
 
 
- private function check_the_order($task_factory,$settings_api, $order,$new_status ,$order_id,$new_array ){
+ private function check_the_order($task_factory,$order,$new_status ,$order_id,$new_array ){
 
 
 
 $new_status = 'wc-' . $new_status; // add the wc prefix
 
 
-
+$settings_api = AOTFW_Settings_Api::get_instance();
 $config = $settings_api->get_config($new_status);
 
 
@@ -152,7 +152,7 @@ if (!empty($config) && is_array($config)) {
               if ($common_value) {
                   echo "Arrays have at least one common value.";
                   $task->do_task($order);   
-                  die($task."orders trueeeeeeeeeee");
+                  die($task->do_task($order)."orders trueeeeeeeeeee");
               } else {
                   echo "Arrays do not have any common value.";
                   die("orders elese");
