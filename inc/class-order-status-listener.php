@@ -162,7 +162,7 @@ if (!empty($config) && is_array($config)) {
                 
              
                
-                  die('jjj');
+                 // die('jjj');
                   //$task->do_task($order);
                 }
               }
