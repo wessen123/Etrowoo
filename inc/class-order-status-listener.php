@@ -70,15 +70,18 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
             // Split comma-separated values
             $new_array = [];
             foreach ($afhendingarmati_values as $value) {
-                if (strpos($value, ',') !== false) {
-                    $comma_separated_values = explode(',', $value);
-                    foreach ($comma_separated_values as $val) {
-                        $new_array[] = trim($val);
-                    }
-                } else {
-                    $new_array[] = $value;
-                }
-            }
+              if (strpos($value, ',') !== false && !(strpos($value, '(') !== false && strpos($value, ')') !== false)) {
+                  // If comma exists and not inside brackets, explode and trim values
+                  $comma_separated_values = explode(',', $value);
+                  foreach ($comma_separated_values as $val) {
+                      $new_array[] = trim($val);
+                  }
+              } else {
+                  // Otherwise, just add the value to the array
+                  $new_array[] = $value;
+              }
+          }
+          
     
             // Debugging
             var_dump($new_array);
