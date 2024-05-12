@@ -91,20 +91,29 @@ if (!class_exists('AOTFW_Settings')) {
 
                     $this->order_statuses = wc_get_order_statuses();
 
+                    $excluded_statuses = array(
+                        'wc-on-hold',
+                        'wc-cancelled',
+                        'wc-failed',
+                        //'wc-pending',
+                         'wc-draft',
+                        'wc-refunded',
+                        //'wc-processing',
+                        //'wc-completed'
+                    );
+
                     foreach ($this->order_statuses as $order_status => $order_label) {
-
-                    ?>
-
-                      <option value="<?php echo esc_attr( $order_status ) ?>"><?php echo esc_html( $order_label ) ?></option>
-
-                    <?php
-
+                        // Exclude specified statuses
+                        if (!in_array($order_status, $excluded_statuses)) {
+                            ?>
+                            <option value="<?php echo esc_attr($order_status) ?>"><?php echo esc_html($order_label) ?></option>
+                            <?php
+                        }
                     }
 
                     ?>
 
-                  </select>
-
+                </select>
 
 
                   

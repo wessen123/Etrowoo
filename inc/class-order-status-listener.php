@@ -81,13 +81,7 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
                   $new_array[] = $value;
               }
           }
-          
-    
-            // Debugging
-            var_dump($new_array);
-            echo 'wesssen ' . '</br>';
-    
-            // Check and process the order
+     
             $this->check_the_order($task_factory, $order, $new_status, $order_id, $new_array);
         }
     }
@@ -115,15 +109,12 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
                                 }
     
                                 if ($common_value) {
-                                    echo "Arrays have at least one common value.";
-                                    die('tasks');
                                     if ($this->should_run($order_id, $task_config)) {
                                         $task = $task_factory->get($task_config['id'], $task_config['fields']);
                                         $task->do_task($order);
                                     }
                                 } else {
-                                    echo "Arrays do not have any common value.";
-                                    die('tasks');
+                                   return false;
                                 }
                             }
                         }
@@ -136,14 +127,7 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
 
 
    
-    function convert_to_slug_array($values) {
-      $slug_array = [];
-      foreach ($values as $value) {
-          $slug_array[] = sanitize_title($value);
-      }
-      return $slug_array;
-  }
-
+  
 
     /**
 
