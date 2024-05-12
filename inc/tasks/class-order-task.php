@@ -1548,7 +1548,7 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
         // echo  $complatedDate.'</br>';
         // var_dump($completedepochTime);
           
-          die('date test');
+         // die('date test');
         // Prepare order data to send to the API endpoint
         $order_data = array(
              "bookingStartsAtTime"=> $epochTime,

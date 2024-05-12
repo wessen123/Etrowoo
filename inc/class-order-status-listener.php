@@ -147,7 +147,8 @@ if (!empty($config) && is_array($config)) {
         } */
 
         
-        
+        //die("orders tesggggtfff");
+        //$task->do_task($order);
           
         }
         var_dump($task_config['fields']['delivery_method']);
@@ -174,13 +175,13 @@ if (!empty($config) && is_array($config)) {
 }
 
     }
- /*    function convert_to_slug_array($values) {
+    function convert_to_slug_array($values) {
       $slug_array = [];
       foreach ($values as $value) {
           $slug_array[] = sanitize_title($value);
       }
       return $slug_array;
-  } */
+  }
 
 
     /**
