@@ -131,28 +131,17 @@ if (!empty($config) && is_array($config)) {
 
             if (isset($task_config['fields']['delivery_method'])) {
               // Iterate through each delivery method and push it into the array
-              $filter_values =  $this->convert_to_slug_array($task_config['fields']['delivery_method']);
+           
             
-              /* if ($order && isset($order->line_items)) {
-                foreach ($order->line_items as $item) {
-                    if (isset($item->meta_data)) {
-                        foreach ($item->meta_data as $meta) {
-                            if ($meta->key === 'pa_afhendingarmati' && in_array($meta->value, $filter_values)) {
-                                
-                                $task->do_task($order);
-                            }
-                        }
-                    }
-                }
-            } */
-
-            
-            //die("orders tesggggtfff");
-            //
+             
               
            
               var_dump($task_config['fields']['delivery_method']);
-                $common_value = false;
+                
+                //$task->do_task($order);
+              }
+            }
+            $common_value = false;
                 foreach ($new_array as $val1) {
                   if (in_array($val1, $task_config['fields']['delivery_method'])) {
                       $common_value = true;
@@ -168,9 +157,6 @@ if (!empty($config) && is_array($config)) {
                   echo "Arrays do not have any common value.";
                   die("orders elese");
               }
-                //$task->do_task($order);
-              }
-            }
           }
         }
 }
