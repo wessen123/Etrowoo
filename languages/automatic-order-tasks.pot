@@ -1,0 +1,197 @@
+
+#  the Entro Automatic Order Tasks For WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Entro Automatic Order Tasks For WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To:https://wondwessenhaileinnovates.ne\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-20T18:07:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: aotfw-domain\n"
+
+#. Plugin Name of the plugin
+msgid " Entro Automatic Order Tasks For WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wondwessenhaileinnovates.ne"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simplify order management. Create tasks that run automatically, whenever an order reaches an order status of your choice."
+msgstr ""
+
+#. Author of the plugin
+msgid "wondwessen Haile"
+msgstr ""
+
+#: inc/class-settings.php:43
+msgid "Select Order Status"
+msgstr ""
+
+#: inc/class-settings.php:57
+msgid "View Log"
+msgstr ""
+
+#: inc/settings/class-settings-ajax.php:56
+msgid "Invalid JSON data in request"
+msgstr ""
+
+#: inc/settings/class-settings-ajax.php:65
+msgid "The requested order status does not exist"
+msgstr ""
+
+#: inc/settings/class-settings-ajax.php:75
+msgid "Success! Settings for"
+msgstr ""
+
+#: inc/settings/class-settings-ajax.php:75
+msgid "have been updated."
+msgstr ""
+
+#: inc/settings/class-settings-ajax.php:121
+msgid "Data missing in request."
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:11
+msgid "When an order reaches the status"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:17
+msgid "No tasks are set for this order status.<br>Click the button below to add your first one!"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:22
+msgid "New Task"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:26
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:360
+msgid "Type email addresses here, or use a dynamic tag from below."
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:700
+msgid "Task Settings"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:704
+msgid "OK"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:710
+msgid "Only run once"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:711
+msgid "Limits the task to only run the first time the order reaches the order status."
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:791
+msgid "Settings"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:798
+msgid "Remove"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:864
+msgid "Send Email"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:873
+msgid "Recipients"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:877
+#: assets/js/automatic-order-tasks.js:918
+msgid "Subject"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:881
+msgid "Message"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:909
+msgid "Create Post"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:921
+#: assets/js/automatic-order-tasks.js:993
+msgid "Content"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:923
+msgid "Categories"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:925
+msgid "Author"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:983
+msgid "Log To File"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1015
+msgid "Custom Order Field"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1024
+msgid "Name"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1028
+msgid "Value"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1053
+msgid "Change Ship. Method"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1062
+msgid "New Shipping Title (optional)"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1065
+msgid "New Shipping Method"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1104
+msgid "Send Webhook"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1112
+msgid "Delivery URL"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1115
+msgid "Secret Key"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1140
+msgid "Trash Order"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1148
+msgid "Reason (optional)"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1256
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1278
+msgid "No log found. New entries can be written using the \"Log To File\" task"
+msgstr ""
+
+#: assets/js/automatic-order-tasks.js:1307
+msgid "Unsaved data will be lost. Proceed?"
+msgstr ""

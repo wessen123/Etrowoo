@@ -1,0 +1,49 @@
+{
+    "translation-revision-date": "2024-05-07 00:00+0100",
+    "generator": "WP-CLI\/2.6.0",
+    "source": "assets\/js\/automatic-order-tasks.min.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "da_DK",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "When an order reaches the status": ["Þegar pöntun nær til stöðu"],
+            "No tasks are set for this order status.<br>Click the button below to add your first one!": ["Engar verkefni eru stillt fyrir þessa pöntunartöðu.<br>Smelltu á hnappinn hér fyrir neðan til að bæta við fyrstu!"],
+            "New Task": ["Nýtt Verkefni"],
+            "Save Changes": ["Vista Breytingar"],
+            "Type email addresses here, or use a dynamic tag from below.": ["Sláðu inn tölvupóstfang hér, eða nottuðu breytilegt merki hér að neðan."],
+            "Task Settings": ["Stillingar Verkefnis"],
+            "OK": ["Í lagi"],
+            "Only run once": ["Keyrðu aðeins einu sinni"],
+            "Limits the task to only run the first time the order reaches the order status.": ["Takmarkar verkefnið til að keyra aðeins fyrsta sinnið sem pöntunin nær til pöntunartöðunnar."],
+            "Settings": ["Stillingar"],
+            "Remove": ["Fjarlægja"],
+            "Send Email": ["Senda Tölvupóst"],
+            "Recipients": ["Móttakendur"],
+            "Subject": ["Efni"],
+            "Message": ["Skilaboð"],
+            "Create Post": ["Búa til Póst"],
+            "Content": ["Innihald"],
+            "Categories": ["Flokkar"],
+            "Author": ["Höfundur"],
+            "Log To File": ["Skrá Hugbúnaðar"],
+            "Custom Order Field": ["Eigin Ritgerðarfelt"],
+            "Name": ["Nafn"],
+            "Value": ["Gildi"],
+            "Change Ship. Method": ["Breyta Skip. Aðferð"],
+            "New Shipping Title (optional)": ["Ný Senda Titill (valkvætt)"],
+            "New Shipping Method": ["Ný Sendiaðferð"],
+            "Send Webhook": ["Senda Vefkóði"],
+            "Delivery URL": ["Afhending Vefslóð"],
+            "Secret Key": ["Leyndarmál Lykill"],
+            "Trash Order": ["Eyða Pöntun"],
+            "Reason (optional)": ["Ástæða (valkvætt)"],
+            "Saving...": ["Að Vista..."],
+            "No log found. New entries can be written using the \"Log To File\" task": ["Engin tilraun fundust. Nýjar færslur geta verið skrifaðar með \"Skrá Hugbúnaðar\" verkefninu"],
+            "Unsaved data will be lost. Proceed?": ["Óvistuð gögn munu glatast. Halda áfram?. Fortsæt?"]
+        }
+    }
+}

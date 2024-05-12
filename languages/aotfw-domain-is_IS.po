@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Automatic Order Tasks For WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wondwessenhaileinnovates.net\n"
+"POT-Creation-Date: 2024-05-07T00:00:00+00:00\n"
+"PO-Revision-Date: 2024-05-07T00:00:00+01:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: is_IS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Domain: aotfw-domain\n"
+
+#. Plugin Name of the plugin
+msgid "Automatic Order Tasks For WooCommerce"
+msgstr "Sjálfvirkar Pöntunarverk fyrir WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://wondwessenhaileinnovates.net"
+msgstr "https://wondwessenhaileinnovates.net"
+
+#. Description of the plugin
+msgid "Simplify order management. Create tasks that run automatically, whenever an order reaches an order status of your choice."
+msgstr "Einfaldið umsjón með pöntunum. Búðu til verkefni sem keyra sjálfkrafa, þegar pöntun nær til stöðu sem þú velur."
+
+#. Author of the plugin
+msgid "Wondwessen Haile"
+msgstr "W.Haile"
+
+#: inc/class-settings.php:43
+msgid "Select Order Status"
+msgstr "Veldu Pöntun Stöðu"
+
+#: inc/class-settings.php:57
+msgid "View Log"
+msgstr "Skoða Dagbók"
+
+#: inc/settings/class-settings-ajax.php:56
+msgid "Invalid JSON data in request"
+msgstr "Ógild JSON gögn í beiðni"
+
+#: inc/settings/class-settings-ajax.php:65
+msgid "The requested order status does not exist"
+msgstr "Óskarðaða pöntun stöðan er ekki til"
+
+#: inc/settings/class-settings-ajax.php:75
+msgid "Success! Settings for"
+msgstr "Vel gert! Stillingar fyrir"
+
+#: inc/settings/class-settings-ajax.php:75
+msgid "have been updated."
+msgstr "hafa verið uppfærðar."
+
+#: inc/settings/class-settings-ajax.php:121
+msgid "Data missing in request."
+msgstr "Gögn vantar í beiðni."
