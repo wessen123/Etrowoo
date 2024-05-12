@@ -1516,8 +1516,6 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
     {
 
      $order = json_decode($order);
-     print_r( $order) ;
-     die("orders trueeeeeeeeeee");
         // Prepare order data to send
         $order_id = $order->id;
         $billing_info = $order->billing;
@@ -1542,15 +1540,7 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
         $complatedDate = $completeddateTime->format('Y-m-d');
         $createdTime = $dateTime->format('H:i:s');
         $complatedTime = $completeddateTime->format('H:i:s');
-         // echo  $dateString;
-         // echo        $epochTime  .'</br>';
-         // echo   $completedepochTime .'</br>';
-        //  echo   $createdDate.'</br>';
-        // echo  $complatedDate.'</br>';
-        // var_dump($completedepochTime);
-          
-         // die('date test');
-        // Prepare order data to send to the API endpoint
+     
         $order_data = array(
              "bookingStartsAtTime"=> $epochTime,
              "bookingEndsAtTime"=> $completedepochTime,
