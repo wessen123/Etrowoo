@@ -142,22 +142,19 @@ if (!empty($config) && is_array($config)) {
                     }
                   }
   
-               
+                  if ($common_value) {
+                    echo "Arrays have at least one common value.";     
             if ($this->should_run($order_id, $task_config)) {
   
               $task = $task_factory->get($task_config['id'], $task_config['fields']);
-  
+                
                 // Iterate through each delivery method and push it into the array
              
-                if ($common_value) {
-                  echo "Arrays have at least one common value.";
+             
                   $task->do_task($order);  
                  // print_r( $task ) ;
                   //die($task->do_task($order)."orders trueeeeeeeeeee");
-              } else {
-                 echo "Arrays do not have any common value.";
-                 // die("orders elese");
-              }
+            
                
                 
              
@@ -165,6 +162,11 @@ if (!empty($config) && is_array($config)) {
                  // die('jjj');
                   //$task->do_task($order);
                 }
+              }
+              else {
+                echo "Arrays do not have any common value.";
+                // die("orders elese");
+             }
               }
             }
             }
