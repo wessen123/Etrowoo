@@ -120,58 +120,59 @@ $config = $settings_api->get_config($new_status);
 if (!empty($config) && is_array($config)) {
   
 
-  foreach ($config as $task_config) {
- 
-    if (!empty($task_config) && isset($task_config['id'])) {
+      foreach ($config as $task_config) {
+    
+        if (!empty($task_config) && isset($task_config['id'])) {
 
 
-      if ($this->should_run($order_id, $task_config)) {
+          if ($this->should_run($order_id, $task_config)) {
 
-        $task = $task_factory->get($task_config['id'], $task_config['fields']);
+            $task = $task_factory->get($task_config['id'], $task_config['fields']);
 
-        if (isset($task_config['fields']['delivery_method'])) {
-          // Iterate through each delivery method and push it into the array
-          $filter_values =  $this->convert_to_slug_array($task_config['fields']['delivery_method']);
-         
-          /* if ($order && isset($order->line_items)) {
-            foreach ($order->line_items as $item) {
-                if (isset($item->meta_data)) {
-                    foreach ($item->meta_data as $meta) {
-                        if ($meta->key === 'pa_afhendingarmati' && in_array($meta->value, $filter_values)) {
-                            
-                            $task->do_task($order);
+            if (isset($task_config['fields']['delivery_method'])) {
+              // Iterate through each delivery method and push it into the array
+              $filter_values =  $this->convert_to_slug_array($task_config['fields']['delivery_method']);
+            
+              /* if ($order && isset($order->line_items)) {
+                foreach ($order->line_items as $item) {
+                    if (isset($item->meta_data)) {
+                        foreach ($item->meta_data as $meta) {
+                            if ($meta->key === 'pa_afhendingarmati' && in_array($meta->value, $filter_values)) {
+                                
+                                $task->do_task($order);
+                            }
                         }
                     }
                 }
+            } */
+
+            
+            //die("orders tesggggtfff");
+            //
+              
+           
+              var_dump($task_config['fields']['delivery_method']);
+                $common_value = false;
+                foreach ($new_array as $val1) {
+                  if (in_array($val1, $task_config['fields']['delivery_method'])) {
+                      $common_value = true;
+                      break;
+                  }
+                }
+
+              if ($common_value) {
+                  echo "Arrays have at least one common value.";
+                  $task->do_task($order);   
+                  die("orders elese");
+              } else {
+                  echo "Arrays do not have any common value.";
+                  die("orders elese");
+              }
+                //$task->do_task($order);
+              }
             }
-        } */
-
-        
-        //die("orders tesggggtfff");
-        //$task->do_task($order);
-          
+          }
         }
-        var_dump($task_config['fields']['delivery_method']);
-        $common_value = false;
-        foreach ($new_array as $val1) {
-        if (in_array($val1, $task_config['fields']['delivery_method'])) {
-            $common_value = true;
-            break;
-        }
-}
-
-      if ($common_value) {
-          echo "Arrays have at least one common value.";
-          die("orders test works ");   
-      } else {
-          echo "Arrays do not have any common value.";
-          die("orders elese");
-      }
-        $task->do_task($order);
-      }
-    }
-  }
-
 }
 
     }
