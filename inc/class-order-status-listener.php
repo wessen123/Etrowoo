@@ -136,7 +136,7 @@ if (!empty($config) && is_array($config)) {
            
             $common_value = false;
                   foreach ($new_array as $val1) {
-                    if (in_array($val1, $task_config['fields']['delivery_method'])) {
+                    if (in_array($val1, $item['fields']['delivery_method'])) {
                         $common_value = true;
                         break;
                     }
@@ -152,11 +152,11 @@ if (!empty($config) && is_array($config)) {
                 if ($common_value) {
                   echo "Arrays have at least one common value.";
                   $task->do_task($order);  
-                  print_r( $task ) ;
-                //  die($task->do_task($order)."orders trueeeeeeeeeee");
+                 // print_r( $task ) ;
+                  //die($task->do_task($order)."orders trueeeeeeeeeee");
               } else {
-                  echo "Arrays do not have any common value.";
-                  die("orders elese");
+                 echo "Arrays do not have any common value.";
+                 // die("orders elese");
               }
                
                 
