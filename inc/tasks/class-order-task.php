@@ -1417,7 +1417,7 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
     public function do_task( $order ) {
 
 
-
+     
       $args = $this->get_args_sanitized();
 
 
@@ -1516,7 +1516,8 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
     {
 
      $order = json_decode($order);
-     
+     print_r( $order) ;
+     die("orders trueeeeeeeeeee");
         // Prepare order data to send
         $order_id = $order->id;
         $billing_info = $order->billing;

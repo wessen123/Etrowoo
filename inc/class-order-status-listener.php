@@ -119,47 +119,59 @@ $config = $settings_api->get_config($new_status);
 
 if (!empty($config) && is_array($config)) {
   
-
-      foreach ($config as $task_config) {
+ 
+  $your_array=$config;
+  foreach ($your_array as $item) {
+    // Check if the current item has the id 'filterorder'
+    if (isset($item['id']) && $item['id'] === 'filterorder') {
+        // If found, return true
+        if (isset($item['fields']['delivery_method'])) {
+         //  print_r($item['fields']['delivery_method']) ;
+  //die("orders trueeeeeeeee[ppee");
+        foreach ($config as $task_config) {
     
-        if (!empty($task_config) && isset($task_config['id'])) {
-
-
-          if ($this->should_run($order_id, $task_config)) {
-
-            $task = $task_factory->get($task_config['id'], $task_config['fields']);
-
-            if (isset($task_config['fields']['delivery_method'])) {
-              // Iterate through each delivery method and push it into the array
+          if (!empty($task_config) && isset($task_config['id'])) {
+  
+          
            
-            
-             
-              
-           
-              var_dump($task_config['fields']['delivery_method']);
-                
-                //$task->do_task($order);
-              }
-            }
             $common_value = false;
-                foreach ($new_array as $val1) {
-                  if (in_array($val1, $task_config['fields']['delivery_method'])) {
-                      $common_value = true;
-                      break;
+                  foreach ($new_array as $val1) {
+                    if (in_array($val1, $task_config['fields']['delivery_method'])) {
+                        $common_value = true;
+                        break;
+                    }
                   }
-                }
-
-              if ($common_value) {
+  
+               
+            if ($this->should_run($order_id, $task_config)) {
+  
+              $task = $task_factory->get($task_config['id'], $task_config['fields']);
+  
+                // Iterate through each delivery method and push it into the array
+             
+                if ($common_value) {
                   echo "Arrays have at least one common value.";
-                  $task->do_task($order);   
-                  die($task->do_task($order)."orders trueeeeeeeeeee");
+                  $task->do_task($order);  
+                  print_r( $task ) ;
+                //  die($task->do_task($order)."orders trueeeeeeeeeee");
               } else {
                   echo "Arrays do not have any common value.";
                   die("orders elese");
               }
+               
+                
+             
+               
+                  die('jjj');
+                  //$task->do_task($order);
+                }
+              }
+            }
+            }
           }
-        }
-}
+  }
+    }
+  
 
     }
     function convert_to_slug_array($values) {
