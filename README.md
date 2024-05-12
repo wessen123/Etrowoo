@@ -42,5 +42,5 @@ Supporting the tasks above are powerful but easy to use tags that add dynamic va
 
 ### Do you take suggestions?
 
-Yes! Feel free to offer suggestions by emailing kontakt@pankado.com. While we may not be able to answer every email, we will read and consider every request. Please note that we do not offer support on said email address.
+Yes! Feel free to offer suggestions by emailing wondwessen H. While we may not be able to answer every email, we will read and consider every request. Please note that we do not offer support on said email address.
 
