@@ -503,7 +503,7 @@ class AOTFW_Sendmail_Order_Task extends AOTFW_Abstract_Order_Task {
 
      $headers = array(
          'Content-Type: text/html; charset=UTF-8',
-         'From: Your Name <Wessen@admin.wondwessenhaileinnovates.net>'
+         'From: Matland <tjorvi@matland.is>'
         
      );
    
@@ -1540,7 +1540,15 @@ if ( !class_exists('AOTFW_Sendentro_Order_Task') ) {
         $complatedDate = $completeddateTime->format('Y-m-d');
         $createdTime = $dateTime->format('H:i:s');
         $complatedTime = $completeddateTime->format('H:i:s');
-     
+         // echo  $dateString;
+         // echo        $epochTime  .'</br>';
+         // echo   $completedepochTime .'</br>';
+        //  echo   $createdDate.'</br>';
+        // echo  $complatedDate.'</br>';
+        // var_dump($completedepochTime);
+          
+         // die('date test');
+        // Prepare order data to send to the API endpoint
         $order_data = array(
              "bookingStartsAtTime"=> $epochTime,
              "bookingEndsAtTime"=> $completedepochTime,

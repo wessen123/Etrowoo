@@ -89,7 +89,8 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
     private function check_the_order($task_factory, $order, $new_status, $order_id, $new_array)
     {
         $new_status = 'wc-' . $new_status; // Add the wc prefix
-    
+        var_dump($new_array);
+        echo 'wessen'.'</br>';
         $settings_api = AOTFW_Settings_Api::get_instance();
         $config = $settings_api->get_config($new_status);
     
@@ -109,11 +110,15 @@ if (!class_exists('AOTFW_Order_Status_Listener')) {
                                 }
     
                                 if ($common_value) {
+                                  echo "it has the same value";
+                                  die('if stat');
                                     if ($this->should_run($order_id, $task_config)) {
                                         $task = $task_factory->get($task_config['id'], $task_config['fields']);
                                         $task->do_task($order);
                                     }
                                 } else {
+                                  echo "it has not the same value";
+                                  die('if stat');
                                    return false;
                                 }
                             }
